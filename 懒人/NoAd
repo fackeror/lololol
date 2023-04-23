@@ -1,0 +1,79 @@
+[Rewrite]
+^https?:\/\/18comic\.(org|vip)\/templates\/frontend\/airav\/js\/jquery.avs.*?\.js.* reject
+www.tvn.cc 302 m.tvn.cc
+^https:\/\/suzihaza\.com\/asset\/jquery\/slim-3\.2\.min\.js.* reject
+^https?:\/\/assert\.avple\.tv\/file\/avple-images\/ad\.js reject
+https://creative.live.missav.com/widgets/Spot/lib.js reject
+https?:\/\/[0-9a-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8} reject
+# ^https:\/\/cn\.pornhub\.com\/_xa\/ads.* reject
+^https:\/\/(cn|www)\.pornhub\.com\/_xa\/ads.* reject
+https://img.alicdn.com/imgextra\b.*gif reject-img
+https:?/\/.*?dililitv\b.*.php\?ad.* reject
+https:?/\/.*?dilidd\..*top.php reject
+https://avgle.com/avideos.js(\?.*|) reject
+https://avgle.com/images.php reject
+poweredbyliquidfire reject
+https://avgle.com/images.php reject
+bann.js.* reject
+^https:/?\/.*?.xvideos-cdn.com.*?\/js\/.*?\/header\/.*?.js reject
+https://img.gsspat.jp/e/142f0528ca05d54cac0e1fa6559b94c4/337d15b53b19e7639c326b5f0ac7744c.gif reject
+^https:?/\/static.nyahentai.pw.*?ads.*?.js reject
+^https:?/\/static.nyahentai.pw.*?check_cat*?.js.* reject
+^https:/?\/rt.gsspat.jp.* reject
+^https:/?\/gum.criteo.com.* reject
+^https:/?\/rt.gsspat.jp.* reject
+^https:/?\/a.realsrv.com.*?ads-.*?.js reject
+https://s3.amazonaws.com/9e27c0d6ac7a738463aebb2faadfdc48c0de202b9fa570955c943.* reject
+https://www.cocomanhua.com/sw.js reject-200
+^https:?/\/.*?wudejia.com/.*?php.* reject
+http://m.yhdm.io/bar/yfgg.js reject
+yfyh.js|yfdi.js reject
+^https:/?\/cdn\.jsdelivr\.net.*\/ad\/.*gif 302 https://limbopro.com/usr/uploads/2020/10/2091577197.png
+https://ads\.bullionyield\.com/.*?slider\.min\.js reject
+https://urtirepor\.com/.*?/.*?/sc/scssx/.*?/lib\.js reject
+https://cluster\.awmserve\.com/incstage/min_exec_pt.js.* reject
+dlads reject
+m_rich.js reject
+logger.js reject
+https:\/\/www\.hptoon\.com\/hanman\/static\/dist\/ppm\/js\/common(\d)\.js 302 https://raw.githubusercontent.com/Maasea/sgmodule/master/script/hptoon/common.js
+^https?:\/\/(\w{0,3}(\.){0,1}(91mjw)(\.)\w{0,3}).*?(\.php.*|php\?ad.*) reject
+biquge.*?\.js reject
+https://hpjav.tv/asset/css/style2.css.* 302 https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/CSS/hpjav.style2.css
+https://hpjav.tv/asset/js/mainze\.js.* 302 https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/hpjav.mainze.js
+https://ninjastream\.to/js/app\.js.* 302 https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/hpjav.app.js
+#vidoza.net/js/.*?\.js.* reject
+vidoza.*?\.(html|js) reject
+
+[Script]
+http-response (nivod4\.tv)(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).*  script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(zhidao)\.baidu\.com\/(question|index|\?fr|\?word) script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_baidu.zhidao.js, requires-body=true, tag=surge_baidu.zhidao
+http-response ^https?:\/\/(www|m)\.baidu\.com(/|\/\?ref.*)$ script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_baidu.index.js, requires-body=true, tag=surge_baidu.index
+http-response ^https?:\/\/(www|m)\.baidu\.com(\/s\?word.*|\/from.*?\/s\?word.*|\/from.*?word=.*) script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_baidu.js, requires-body=true, tag=surge_baidu
+http-response ^https?:\/\/(www\.bing)(\.\w{2,4}){1,2}\/(search\?.*|\?sa=|\?FORM)(?!.*?(apps=)).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(www\.google)(\.\w{2,4}){1,2}\/search\?(?!.*?(apps=)).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(18comic)(\.)\w{0,3})(?!.*?(/(cdn-cgi|onclick)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(wnacg)(\.)\w{0,3})(?!.*?(/(cdn-cgi|onclick)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(gimy)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_gimy.js, requires-body=true, tag=surge_gimy
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(ddys|ddrk|ddys2)(\.)\w{0,3})(?!.*?(\.webmanifest|/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(btbdys|bdys0(1|2|3))(\.)\w{0,3})\/play\/.*?\.htm.* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(btbdys|bdys0(1|2|3))(\.)\w{0,3})(?!.*?(/(cdn-cgi|verifyCode|member\/|zzzzz)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8|ddr))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(duboku)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_duboku.js, requires-body=true, tag=surge_duboku
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(tvn)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_tvn.js, requires-body=true, tag=surge_tvn
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(5dy5|o8tv|555dd\d)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(libvio)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_libvio.js, requires-body=true, tag=surge_libvio
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(javmost)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).*  script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_javmost.js, requires-body=true, tag=surge_javmost
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(javbus)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_javbus.js, requires-body=true, tag=surge_javbus
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(avple)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_avple.js, requires-body=true, tag=surge_avple
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(jable)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(missav)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(4hu)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|php|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_4hu.js, requires-body=true, tag=surge_4hu
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(pornhub)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/surge_pornhub.js, requires-body=true, tag=surge_pornhub
+http-response https?:\/\/(\w{0,3}(\.){0,1}(91porn)(\.)\w{0,3})(?!.*?(/(cdn-cgi)))(?!.*?((captcha\.php)|(\.(css|js|jpeg|jpg|png|gif|ico|mp3|mp4|svg|tff|ttf|PNG|woff|woff2|m3u8)))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(www.ttsp.tv)(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^http?:\/\/(www.tz659.com)(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response ^https?:\/\/(anime1.me)(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+http-response # ^https?:\/\/(m\.(yhpdm|yhdmp)\.(cc|com))(?!.*?(/(cdn-cgi)))(?!.*?(\.(css|js|jpeg|jpg|png|gif|ico|mp3|mp4|svg|tff|PNG|woff|woff2|m3u8))).* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/yinghua.js, requires-body=true, tag=yinghua
+http-response ^https?://m.yhpdm.com.* script-path=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adguard/Adblock4limbo.js, requires-body=true, tag=Adblock4limbo
+
+[Mitm]
+hostname = m.nivod4.tv, www.nivod4.tv, m.yhpdm.com, m.yhdmp.cc, m.yhdmp.com, anime1.me, www.tz659.com, www.ttsp.tv, *.cloudfront.net, www.o8tv.com, www.555dd*.com, www.5dy*, *.tvn.cc, www.wnacg.com, www.wnacg.org, suzihaza.com, 91porn.com, netflav.com, www.javmost.xyz, javmost.xyz, www5.javmost.xyz, www5.javmost.com, www.bing.com, zhuanlan.zhihu.com, www.zhihu.com, jable.tv, *.tvn.cc, ddrk.me, ddys.pro, ddys.tv, ddys.art, ddys2.me, 18comic.org, 18comic.vip, www.google.com, www.google.com.hk, www.pornhub.com, cn.pornhub.com, missav.com, www.libvio.com, 4hu.*, *.gimy.*, *.duboku.*, assert.avple.tv, avple.tv, *.btbdys.*, www.bdys01.com, www.bdys02.com, www.bdys03.com, *.javbus.*, www.baidu.com, m.baidu.com, zhidao.baidu.com
