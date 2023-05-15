@@ -1,5 +1,6 @@
 #!name=历史价格
 #!desc=京东淘宝比价
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/master/App_icon/80px/JD.png
 [MITM]
 hostname = api.m.jd.com, trade-acs.m.taobao.com
 [Script]
