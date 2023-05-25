@@ -1,5 +1,4 @@
 
-```
 [Host]
 -hostname,-broadcast.chat.bilibili.com
 -hostname,-*cdn*.biliapi.net
