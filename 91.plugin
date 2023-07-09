@@ -3,8 +3,8 @@
 #!homepage=
 #!author=
 #!icon=https://pp.myapp.com/ma_icon/0/icon_54215896_1687162278/256
-[mitm]
+[MITM]
 hostname = 91porn.com
 
 [Script]
-http-response ^https?://91porn\.com/view_video\.php\?.*viewkey=.*$ requires-body=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/91porn.js
+http-response ^https?:\/\/91porn\.com\/view_video\.php\?.*viewkey=.*$ requires-body=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/91porn.js
