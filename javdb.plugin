@@ -1,0 +1,7 @@
+#!name=javdb
+#!desc=javdb去广告
+[Script]
+http-request ^https?:\/\/api\.((pxxgg|yijingluowangluo)\.xyz|ujvnmkx\.cn)\/api script-path=https://raw.githubusercontent.com/chxm1023/Advertising/main/JavDB.js, timeout=10, tag=javdb去广告
+
+[MITM]
+hostname = api.pxxgg.xyz, api.ujvnmkx.cn, api.yijingluowangluo.xyz
