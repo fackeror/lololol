@@ -1,0 +1,11 @@
+#!name=91porn
+#!desc=91porn
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1084.png
+
+[Script]
+
+http-response ^http[s]?://91porn\.com/view_video\.php\?.*viewkey=.*$ script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/91porn.js, requires-body=true, timeout=60 ,tag=91porn_14
+
+[MITM]
+
+hostname = 91porn.com
