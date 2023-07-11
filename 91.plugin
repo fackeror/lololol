@@ -1,0 +1,7 @@
+#!name=91
+#!desc=91解锁播放权限
+[Mitm]
+hostname = 91porn.com
+
+[Script]
+http-response ^http[s]?://91porn\.com/view_video\.php\?.*viewkey=.*$ script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/91porn.js, requires-body=true, timeout=10, tag=91json
